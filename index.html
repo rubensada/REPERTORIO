@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mis Canciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPERTORIO MUSICAL</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Bienvenido a mi repertorio musical</h1>
-  <p>Seleccioná un estilo:</p>
-  <button onclick="window.open('balada.html', '_blank')">BALADA</button>
-  <button onclick="window.open('tango.html', '_blank')">TANGO</button>
+    <header>
+        <h1>REPERTORIO MUSICAL</h1>
+    </header>
+    <main>
+        <div class="genre-buttons">
+            <!-- Botones para cada género -->
+            <button onclick="showSongs('Bachata')">Bachata</button>
+            <button onclick="showSongs('Balada')">Balada</button>
+            <button onclick="showSongs('Balada en inglés')">Balada en inglés</button>
+            <button onclick="showSongs('Balada en italiano')">Balada en italiano</button>
+            <button onclick="showSongs('Blues')">Blues</button>
+            <button onclick="showSongs('Bolero')">Bolero</button>
+            <button onclick="showSongs('Canción de cuna')">Canción de cuna</button>
+            <button onclick="showSongs('Chacarera')">Chacarera</button>
+            <button onclick="showSongs('Chamarrita')">Chamarrita</button>
+            <button onclick="showSongs('Chamamé')">Chamamé</button>
+            <button onclick="showSongs('Clásica')">Clásica</button>
+            <button onclick="showSongs('Cueca')">Cueca</button>
+            <button onclick="showSongs('Cumbia')">Cumbia</button>
+            <button onclick="showSongs('Electropop')">Electropop</button>
+            <button onclick="showSongs('España')">España</button>
+            <button onclick="showSongs('Eurodance')">Eurodance</button>
+            <button onclick="showSongs('Folk')">Folk</button>
+            <button onclick="showSongs('Habanera')">Habanera</button>
+            <button onclick="showSongs('Himno')">Himno</button>
+            <button onclick="showSongs('Italiano')">Italiano</button>
+            <button onclick="showSongs('Karaoke')">Karaoke</button>
+            <button onclick="showSongs('Lentos')">Lentos</button>
+            <button onclick="showSongs('Loncomeo')">Loncomeo</button>
+            <button onclick="showSongs('Malambo')">Malambo</button>
+            <button onclick="showSongs('Marea')">Marea</button>
+            <button onclick="showSongs('Micronovela')">Micronovela</button>
+            <button onclick="showSongs('Milonga')">Milonga</button>
+            <button onclick="showSongs('Pasodoble criollo')">Pasodoble criollo</button>
+            <button onclick="showSongs('Pasodoble español')">Pasodoble español</button>
+            <button onclick="showSongs('Polca')">Polca</button>
+            <button onclick="showSongs('Pop')">Pop</button>
+            <button onclick="showSongs('Pop colombiano')">Pop colombiano</button>
+            <button onclick="showSongs('Pop español')">Pop español</button>
+            <button onclick="showSongs('Punto Cubano')">Punto Cubano</button>
+            <button onclick="showSongs('Ranchera criolla')">Ranchera criolla</button>
+            <button onclick="showSongs('Ranchera mexicana')">Ranchera mexicana</button>
+            <button onclick="showSongs('Rap')">Rap</button>
+            <button onclick="showSongs('Rock')">Rock</button>
+            <button onclick="showSongs('Rumano')">Rumano</button>
+            <button onclick="showSongs('Salsa')">Salsa</button>
+            <button onclick="showSongs('Sextilla pareada')">Sextilla pareada</button>
+            <button onclick="showSongs('Tango')">Tango</button>
+            <button onclick="showSongs('Tarantela')">Tarantela</button>
+            <button onclick="showSongs('Trovo murciano')">Trovo murciano</button>
+            <button onclick="showSongs('Vals')">Vals</button>
+            <button onclick="showSongs('Zamba')">Zamba</button>
+        </div>
+        <div id="song-list" class="song-list"></div>
+    </main>
+    <script src="songs.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html>  
